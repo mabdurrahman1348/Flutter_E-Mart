@@ -2,7 +2,8 @@ import 'package:emart_app/consts/consts.dart';
 import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
 
-Widget customTextField({String? title, String? hint, controller,isPass}) {
+Widget customTextField(
+    {String? title, String? hint, controller, isPass, context}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
@@ -21,8 +22,8 @@ Widget customTextField({String? title, String? hint, controller,isPass}) {
             fillColor: lightGrey,
             filled: true,
             border: InputBorder.none,
-            focusedBorder:
-                const OutlineInputBorder(borderSide: BorderSide(color: redColor))),
+            focusedBorder: const OutlineInputBorder(
+                borderSide: BorderSide(color: redColor))),
       ),
       5.heightBox,
     ],

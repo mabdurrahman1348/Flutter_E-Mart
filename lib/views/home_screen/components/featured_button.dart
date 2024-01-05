@@ -12,8 +12,8 @@ Widget featuredButton({String? title, icon}) {
         width: 60,
         fit: BoxFit.fill,
       ),
-      10.widthBox,
-      title!.text.fontFamily(semibold).color(darkFontGrey).make(),
+      Expanded(
+          child: title!.text.fontFamily(semibold).color(darkFontGrey).make()),
     ],
   )
       .box

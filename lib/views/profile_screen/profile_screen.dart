@@ -91,9 +91,7 @@ class ProfileScreen extends StatelessWidget {
                             OutlinedButton(
                                 style: OutlinedButton.styleFrom(
                                     side: const BorderSide(color: whiteColor)),
-                                onPressed: () async {
-                                  await Get.put(AuthController())
-                                      .signoutMethod(context);
+                                onPressed: () {
                                   Get.offAll(() => const LoginScreen());
                                 },
                                 child: logout.text
