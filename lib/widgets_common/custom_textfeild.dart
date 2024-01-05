@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
 
 Widget customTextField(
-    {String? title, String? hint, controller, isPass, context}) {
+    {String? title, String? hint, controller, isPass, context,String Function(String?)? validator}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
@@ -12,6 +12,7 @@ Widget customTextField(
       TextFormField(
         obscureText: isPass,
         controller: controller,
+        validator: validator,
         decoration: InputDecoration(
             hintText: hint,
             hintStyle: const TextStyle(

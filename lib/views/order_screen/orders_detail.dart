@@ -71,21 +71,23 @@ class OrdersDetails extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              "Shipping Address"
-                                  .text
-                                  .fontFamily(semibold)
-                                  .make(),
-                              "${data['order_by_name']}".text.make(),
-                              "${data['order_by_email']}".text.make(),
-                              "${data['order_by_address']}".text.make(),
-                              "${data['order_by_city']}".text.make(),
-                              "${data['order_by_state']}".text.make(),
-                              "${data['order_by_phone']}".text.make(),
-                              "${data['order_by_postalcode']}".text.make(),
-                            ],
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                "Shipping Address"
+                                    .text
+                                    .fontFamily(semibold)
+                                    .make(),
+                                "${data['order_by_name']}".text.make(),
+                                "${data['order_by_email']}".text.make(),
+                                "${data['order_by_address']}".text.make(),
+                                "${data['order_by_city']}".text.make(),
+                                "${data['order_by_state']}".text.make(),
+                                "${data['order_by_phone']}".text.make(),
+                                "${data['order_by_postalcode']}".text.make(),
+                              ],
+                            ),
                           ),
                           SizedBox(
                             width: 130,

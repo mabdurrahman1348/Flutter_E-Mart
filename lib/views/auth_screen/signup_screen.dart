@@ -47,6 +47,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     title: name,
                     hint: nameHint,
                     controller: nameController,
+                    // validator: if(nameController.text){},
                     isPass: false),
                 customTextField(
                     title: email,
